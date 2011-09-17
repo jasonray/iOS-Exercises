@@ -14,6 +14,8 @@
 		74CB794714237B440042118A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CB794614237B440042118A /* main.m */; };
 		74CB794B14237B440042118A /* QuizAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CB794A14237B440042118A /* QuizAppDelegate.m */; };
 		74CB794E14237B440042118A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74CB794C14237B440042118A /* MainWindow.xib */; };
+		74CB796114251E900042118A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 74CB796014251E900042118A /* Icon.png */; };
+		74CB796314251E960042118A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74CB796214251E960042118A /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,9 @@
 		74CB794914237B440042118A /* QuizAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizAppDelegate.h; sourceTree = "<group>"; };
 		74CB794A14237B440042118A /* QuizAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizAppDelegate.m; sourceTree = "<group>"; };
 		74CB794D14237B440042118A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		74CB796014251E900042118A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		74CB796214251E960042118A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		74CB796414251F6B0042118A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,9 @@
 		74CB792B14237B440042118A = {
 			isa = PBXGroup;
 			children = (
+				74CB796414251F6B0042118A /* Default.png */,
+				74CB796214251E960042118A /* Icon@2x.png */,
+				74CB796014251E900042118A /* Icon.png */,
 				74CB794014237B440042118A /* Quiz */,
 				74CB793914237B440042118A /* Frameworks */,
 				74CB793714237B440042118A /* Products */,
@@ -142,6 +150,8 @@
 			files = (
 				74CB794514237B440042118A /* InfoPlist.strings in Resources */,
 				74CB794E14237B440042118A /* MainWindow.xib in Resources */,
+				74CB796114251E900042118A /* Icon.png in Resources */,
+				74CB796314251E960042118A /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
