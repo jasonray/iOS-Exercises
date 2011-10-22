@@ -37,7 +37,7 @@
     Possession *p = [[self alloc] initWithPossessionName:name
                                           valueInDollars:value 
                                             serialNumber:serialNumber];
-    return p;
+    return [p autorelease];
 }
 
 -(id)initWithPossessionName:(NSString *)name
@@ -60,6 +60,8 @@
 }
 
 - (void)setPossessionName:(NSString *)str{
+    [str retain];
+    [possessionName release];
     possessionName=str;
 }
 - (NSString *)possessionName {
@@ -67,6 +69,8 @@
 }
 
 -(void)setSerialNumber:(NSString *)str{
+    [str retain];
+    [serialNumber release];
     serialNumber=str;
 }
 -(NSString *)serialNumber {
@@ -86,7 +90,15 @@
 
 -(NSString *) description
 {
-    NSString *description=[[NSString alloc] initWithFormat:@"%@ (%@): worth $%d, recorded on %@", possessionName,serialNumber,valueInDollars,dateCreated];
+    NSString *description=[NSString stringWithFormat:@"%@ (%@): worth $%d, recorded on %@", possessionName,serialNumber,valueInDollars,dateCreated];
     return description;
 }
+
+-(void)dealloc {
+    [possessionName release];
+    [serialNumber release];
+    [dateCreated release];
+    [super dealloc];
+}
+
 @end
