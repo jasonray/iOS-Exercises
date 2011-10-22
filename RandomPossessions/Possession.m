@@ -49,6 +49,7 @@
         [self setPossessionName:name];
         [self setValueInDollars:value];
         [self setSerialNumber:num];
+        dateCreated = [[NSDate alloc] init];
     }
     
     return self;
