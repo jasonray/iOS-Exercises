@@ -9,6 +9,7 @@
 #import "Possession.h"
 
 @implementation Possession
+@synthesize possessionName, serialNumber, valueInDollars, dateCreated;
 
 +(NSString *)getRandomValueFromList:(NSArray *)a {
     int index=rand() % [a count];

@@ -10,10 +10,6 @@
 
 @interface Possession : NSObject
 {
-    NSString *possessionName;
-    NSString *serialNumber;
-    int valueInDollars;
-    NSDate *dateCreated;
     
 }
 
@@ -23,14 +19,9 @@
              valueInDollars:(int)value
                serialNumber:(NSString *)num;
 
--(void)setPossessionName:(NSString *)str;
--(NSString *)possessionName;
+@property (nonatomic, retain) NSString *possessionName;
+@property (nonatomic, retain) NSString *serialNumber;
+@property (nonatomic) int valueInDollars;
+@property (nonatomic, readonly) NSDate *dateCreated;
 
--(void)setSerialNumber:(NSString *)str;
--(NSString *)serialNumber;
-
--(void)setValueInDollars:(int)i;
--(int)valueInDollars;
-
--(NSDate *)dateCreated;
 @end
