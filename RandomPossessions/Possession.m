@@ -96,6 +96,7 @@
 }
 
 -(void)dealloc {
+    NSLog(@"Delloc %@", possessionName);
     [possessionName release];
     [serialNumber release];
     [dateCreated release];
